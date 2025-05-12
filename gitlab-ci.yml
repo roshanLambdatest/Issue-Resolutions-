@@ -1,0 +1,15 @@
+stages:
+  - test
+
+selenium_tests:
+  image: node:18
+  stage: test
+  script:
+    - npm install
+    - npx playwright install 
+    - npx playwright install-deps
+    - npx playwright test
+    # - npm run test
+  variables:
+    LT_USERNAME: 'roshank'
+    LT_ACCESS_KEY: 'LT_pdN9i3brrjhqvhD82BuHMGL29zUl83MBQpdartL2hae9QdE'
