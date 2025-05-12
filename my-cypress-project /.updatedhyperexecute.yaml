@@ -1,0 +1,189 @@
+version: "0.1"
+user: roshank
+key: LT_pdN9i3brrjhqvhD82BuHMGL29zUl83MBQpdartL2hae9QdE
+testSuites: []
+pre: [npm install, npm install cypress --save-dev, npm i lambdatest-cypress-cli]
+preDirectives:
+    commands: [npm install, npm install cypress --save-dev, npm i lambdatest-cypress-cli]
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+jobLabel:
+    - cypress-v10
+    - win
+    - autosplit
+runson: win
+autosplit: true
+concurrency: 1
+testDiscovery:
+    command: ls cypress/e2e
+    mode: static
+    type: raw
+testDiscoveryResult:
+    - loginTest.cy.js
+testDiscoveryResult2D:
+    - - loginTest.cy.js
+testRunnerCommand: npx cypress run  --spec ./cypress/e2e/$test --browser=chrome-latest --headed --config video=true
+tunnelOpts:
+    testsPerTunnel: 10
+jobID: c6c24290-acac-4bc5-a148-162e2df83460
+codeDirectory: my-cypress-project
+framework:
+    name: ""
+    flags: []
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    runnerFlags: []
+    workingDirectory: ""
+    isTestNGXMLSuite: false
+    defaultReports: false
+    args:
+        appPath: ""
+        testSuitePath: ""
+        xcTestPlanPath: ""
+        shards:
+            mappings: []
+        filters:
+            attributes: []
+        devices: []
+        deviceSelectionStrategy: ""
+        appId: ""
+        testSuiteAppId: ""
+        xcTestPlanId: ""
+        skipXMLOnRun: false
+        skipInstall: false
+        disableReleaseDevice: false
+        platformName: ""
+        isRealMobile: null
+        avoidAppLaunch: false
+        queueTimeout: 0
+        uninstallPreviousBuild: false
+        language: ""
+        locale: ""
+        preservedDevice: false
+        fixedIP: ""
+        resignApp: true
+        minorOsVersion: false
+        playwrightRD: false
+        mobileDC: null
+        skipUninstallPreviousBuild: false
+        isVirtualDevice: false
+        mitmProxy: false
+        networkHar: false
+        artifacts: false
+        otherApps: []
+        customData: {}
+        smartUI: null
+    additional_args: null
+    licenseKey: ""
+    userdefinediscovery: false
+    toscaArgs: null
+    version: ""
+    downloadURL: ""
+    baseCommand: ""
+cypressOps:
+    build: Hyperexecute Cypress Sample Build
+    tags:
+        - HYP-Cypress
+        - Windows
+        - Autosplit
+        - Accessibility
+    network: false
+    buildTags:
+        - HYP-Cypress-v10
+    geoLocation: ""
+    name: ""
+    performance: false
+    dedicatedProxy: false
+    geoLocationVendor: ""
+    runOnNx: false
+    smartUICaps:
+        smartUIProjectName: ""
+        smartUIProjectKey: ""
+        smartUIBuildName: ""
+        smartUIBaseline: false
+        smartUICompare: ""
+        smartUIOptions: {}
+    har: false
+    fullHar: false
+    accessibility: false
+    accessibilityWcagVersion: ""
+    accessibilityBestPractice: false
+    accessibilityNeedsReview: false
+    projectName: ""
+    projectKey: ""
+    projectAutoCreate: false
+    reporterConfigFile: ""
+    additionalcapabilities:
+        Build: Hyperexecute Cypress Sample Build
+        BuildTags:
+            - HYP-Cypress-v10
+        Tags:
+            - HYP-Cypress
+            - Windows
+            - Autosplit
+            - Accessibility
+cypress: true
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+combineTasksInMatrixMode: false
+captureScreenRecordingForScenarios: false
+maxRetriesPreSteps: 0
+triggerMode: false
+sourcePayload:
+    verifySSL: true
+collectLocalGitData: true
+dynamicAllocation: false
+appium: null
+platformConfig: null
+differentialUpload:
+    enabled: false
+    ttlHours: null
+    forcedDisabled: false
+project:
+    id: ""
+    name: ""
+    type: custom
+meta: {}
+alwaysRunPostSteps: false
+errorCategorizedOnFailureOnly: false
+testDiscoveryResultV3: []
+storageType: ""
+localHTTPProxy: ""
+regionConfig:
+    vm: []
+    storage:
+        region: ""
+        enabled: false
+        name: ""
+        platform: azure
+waitForArtefactsUpload: false
+unzipPayload: false
+projectpath: ""
+accessibilityJob: false
+globalPre:
+    mode: ""
+    commands: []
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+    completed: false
+    runson: ""
+    cache: false
+    yamlPath: null
+    type: ""
+    location: ""
+globalPost:
+    mode: ""
+    commands: []
+    shell: ""
+    workingDirectory: ""
+    completed: false
+    runson: ""
+slackChannel: ""
+whiteLabelProductTag: ""
